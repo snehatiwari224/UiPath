@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position:relative;
+    background-color: #FFFFFF;
+}
+
+.nav{
+    font-family: 'Poppins', sans-serif;
+    height: 100px;
+    width: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3.5vw;
+    border-bottom: 1.5px solid #dadada;
+    cursor: pointer;
+}
+.nav-part2{
+    display:flex;
+    /*background-color: beige;*/
+    justify-content: space-between;
+    align-items:center ;
+    gap:2.5vw;
+}
+.nav h2{
+    font-size:3vw;
+    font-weight: 700;
+}
+.nav a{
+    font-size:1.5vw;
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    padding: 1.5vw 0.2vw;
+    width:58%;
+}
+.nav button{
+    background:linear-gradient(180deg,
+               var(--second-color),
+            var(--second-color-alt));
+padding:1.125rem 3rem;
+border-radius:4rem ;
+color:var(--title-color);
+font-weight: var(--font-semi-bold);
+box-shadow: 0 8px 32px hsla(268, 58%,4%,.3),
+            inset 0 4px 8px hsla(0,0%,100%,.4);  
+}
+.nav i{
+    font-size: 2vw;
+    flex-wrap: 800;
+}
+.content{
+    height: calc(100% - 100px);
+    width: 100%;
+    /*background-color:azure;*/
+    display: flex;
+    position: relative;
+}
+.left{
+    height: 100%;
+    width:55%;
+    padding: 5vw 3vw;
+}
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+
+}
+.left span{
+    color:#F42E00;
+}
+.left p{
+    font-size: 1.2vw;
+    font-weight:600;
+    color:#666;
+    width:80%;
+    margin-top: 2vw;
+    margin-bottom:4vw;
+
+}
+.content button{
+    font-size:1.2vw;
+    padding: 1.1vw 2.1vw;
+    background-color:#F42E00;
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    font-weight: 700;
+
+}
+.right{
+    height:100%;
+    width:45%;
+}
+.right img{
+    height:100%;
+    width:96%;
+    margin-top:1.5vw;
+    margin-bottom: 4vw;
+}
+.part2 h1{
+    text-align: center;
+    text-decoration:solid;
+    text-shadow: #dadada;
+    font-family: 'Poppins', sans-serif;
+
+}
+.paras{
+    padding:0px 65px;
+}
+.section{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width:80% ;
+    margin: auto;
+
+}
+.section h1{
+    font-size: 2vw;
+    line-height: 2vw;
+}
+.section p{
+    font-size:1.7vw;
+    font-weight:400;
+    color:#666;
+    width:80%;
+    margin-top: 2vw;
+    margin-bottom:4vw;
+
+}
+.sectiontag{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 5vw solid;
+
+}
+
+.secleft{
+    flex-direction: row-reverse;
+}
+.secleft{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width:80% ;
+    margin: auto;
+    flex-direction: row-reverse;
+}
+.founding_members{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    display: flex;
+}
+.card{
+    height:500px;
+    margin:50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+
+}
+.card img{
+    height:500px;
+    width:200px;
+    border-radius: 3px;
+}
+.intro{
+    height:100px;
+    width:350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position:absolute;
+    background: rgb(27,27,27,.5);
+    color:white;
+    bottom: 240px;
+
+
+}
+.container .card .intro h1{
+    margin: 10px;
+    font-size: 40px;
+    position:relative;
+
+}
+.container .card .intro p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    opacity: 0;
+    position:relative;
+
+}
+.container .card .intro span{
+    font-weight: bold;
+    position: relative;
+
+}
+.card:hover{
+    cursor:pointer;
+
+}
+
+ 
+@media (max-width:600px){
+    .nav{
+        height: 60px;
+        padding: 0 6vw;
+    }
+    .nav h2{
+        font-size:5.1vw;
+    }
+    .nav a{
+        font-size:4vw ;
+        display: none;
+    }
+    .nav button{
+        display:flex;
+
+    }
+    .nav i{
+        font-size:4.5vw;
+        display: block;
+    }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 45%;
+        padding: 4vw 6vw;
+    }
+    .right{
+        width:100%;
+        height: 55%;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+    .left p{
+        font-size:3vw;
+        width: 90%;
+        margin-top:5vw;
+        margin-bottom: 6vw;
+    }
+    .content button{
+        padding: 3vw 6vw;
+        border-radius: 3px;
+        font-weight: 600;
+        font-size: 3.5vw;
+
+    }
+    .logo img{
+        display: grid;
+    }
+
+}
+
+  </style>
+  
+    <title>UiPath</title>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <h2 class="logo"><img src="logo.jpg"></h2>
+             <div class="nav-part2">
+                <a href="#">HOME</a>
+                <a href="#" class="about_us "> <i class="ri-team-line"></i>TEAM</a>
+                <a href="#" class="team"> <i class="ri-mail-fill"></i>CONTACT US</a>
+                <button>Sign In</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left">
+                <h1>Learn  the <span> Easiest</span> and the upcoming technology</h1>
+                <p>Automation and AI offer unprecedented opportunities to innovate. UiPath enables our customers to tap into this power with our industry-leading AI-powered enterprise automation technology.</p>
+                <button>EXPLORE NOW <a href="#"></a></button>
+            </div>
+            <div class="right">
+                <img src="logo2.png" alt="logo of ui path">
+            </div>
+        </div>
+    </div>
+    <section class="section">
+        <div class="paras">
+            <h1 class="sectiontag">ABOUT US</h1>
+            <p class="section_tag">The UiPath Student Community at AITR was established in the year 2022 with the aim of fostering knowledge and skills in the field of Robotic Process Automation (RPA). 
+                Led by dedicated individuals, this community has grown steadily and has become a hub for students interested in UiPath and RPA technologies.
+            </p>
+        </div>
+            <div class="thumbnail">
+                <img src="happy.jpg" alt="" class="imgfluid">
+            </div>
+        
+    </section>
+        
+    </section>
+    <section class="founding_members">
+        <div class="container">
+            <div class="card">
+                <img src="girl.jpg" alt="boy">
+                <div class="intro">
+                    <h1>Prof. Narendra Pal Sir </h1>
+                    <p>FOUNDER<span>Member</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="girl.jpg" alt="boy">
+                <div class="intro">
+                    <h1></h1>
+                    <p>FOUNDER<span>Member</span></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="girl.jpg" alt="boy">
+                <div class="intro">
+                    <h1>KHUSHI MEGHANI</h1>
+                    <p>FACULTY <span>Coordinator</span></p>
+                </div>
+            </div>
+        </div>
+
+           
+        
+    </section>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
